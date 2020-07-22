@@ -1,19 +1,30 @@
 import React from 'react';
 
 class Accordion extends React.Component {
-  render() {
 
-    const buttons = this.props.sections.map((tab, index) => (
-      <li key={index}><button >
-        {tab.title}
+  state = {
+    currentIndex: 0
+  }
+
+  handleButtonClicked = (index) => {
+    this.setState({currentIndex: index});
+  };
+
+  renderButtons() {
+    return this.props.sections.map((section, index) => (
+      <li key={index}><button onClick={() => this.handleButtonClicked(index)}>
+        {section.title}
       </button>
+      {index === this.state.currentIndex ? <p>{section.content}</p>: ''}
       </li>
     ))
+  }
 
+  render() {
     return (
       <div>
         <ul>
-          {buttons}
+          {this.renderButtons()}
         </ul>
       </div>
     )
