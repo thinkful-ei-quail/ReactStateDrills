@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component closes the first section and opens any clicked section 1`] = `
+<div>
+  <ul>
+    <li
+      key="0"
+    >
+      <button
+        onClick={[Function]}
+      />
+    </li>
+    <li
+      key="1"
+    >
+      <button
+        onClick={[Function]}
+      />
+      <p>
+        Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </li>
+    <li
+      key="2"
+    >
+      <button
+        onClick={[Function]}
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Component renders empty given no sections 1`] = `
+<div>
+  <ul />
+</div>
+`;
+
+exports[`Accordion Component renders the first section by default 1`] = `
+<div>
+  <ul>
+    <li
+      key="0"
+    >
+      <button
+        onClick={[Function]}
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.
+      </p>
+    </li>
+    <li
+      key="1"
+    >
+      <button
+        onClick={[Function]}
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <button
+        onClick={[Function]}
+      />
+    </li>
+  </ul>
+</div>
+`;
