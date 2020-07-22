@@ -21,6 +21,8 @@ class App extends React.Component {
     return (
       <div>
         <Accordion sections={sections}/>
+        <Accordion sections={sections}/>
+        <Accordion sections={sections}/>
       </div>
     );
   }
